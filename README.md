@@ -2,6 +2,8 @@
 
 This extension provides syntax highlighting and basic language support for the [Sigil](https://github.com/loophole-software/sigil) programming language (`.sl` files) in Visual Studio Code.
 
+![vscode plugin image](https://github.com/rdenadai/sigil-vscode-language-support/blob/38ea4b1a2b33e6ef444019ef06e5b0d52e5e0d78/static/image.png?raw=true)
+
 ## Features
 
 - **Syntax Highlighting**: Colorizes keywords, comments, strings, numbers, and more to improve code readability.
@@ -59,7 +61,9 @@ else:
 
 ## Contributing
 
-Found a bug or have a suggestion? Please open an issue on the [GitHub repository](https://github.com/loophole-software/sigil-language-support).
+Found a bug or have a suggestion? Please open an issue on the [GitHub repository](https://github.com/loophole-software/sigil-vscode-language-support).
+
+Sigil Programming Language [GitHub repository](https://github.com/rdenadai/sigil).
 
 ## License
 
