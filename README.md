@@ -63,7 +63,7 @@ else:
 
 Found a bug or have a suggestion? Please open an issue on the [GitHub repository](https://github.com/loophole-software/sigil-vscode-language-support).
 
-Sigil Programming Language [GitHub repository](https://github.com/rdenadai/sigil).
+Sigil Programming Language [GitHub repository](https://github.com/loophole-software/sigil).
 
 ## License
 
