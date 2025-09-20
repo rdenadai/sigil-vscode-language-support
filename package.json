@@ -1,0 +1,46 @@
+{
+  "name": "sigil-vscode-language-support",
+  "displayName": "Sigil Language Support",
+  "description": "Syntax highlighting for the Sigil programming language.",
+  "version": "0.0.1",
+  "publisher": "Sigil Programming Language",
+  "icon": "static/flogo.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sigil",
+        "aliases": [
+          "Sigil",
+          "sigil"
+        ],
+        "extensions": [
+          ".sl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sigil",
+        "scopeName": "source.sigil",
+        "path": "./syntaxes/sigil.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "scopeName": "source.sigil.markdown",
+        "path": "./syntaxes/sigil-markdown.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
+  }
+}

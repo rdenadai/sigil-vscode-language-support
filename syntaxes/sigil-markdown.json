@@ -1,0 +1,31 @@
+{
+  "scopeName": "source.sigil.markdown",
+  "injectionSelector": ["L:text.html.markdown", "L:text.html.derived.markdown"],
+  "patterns": [
+    {
+      "include": "#sigil-code-block"
+    }
+  ],
+  "repository": {
+    "sigil-code-block": {
+      "name": "markup.fenced_code.block.markdown",
+      "begin": "(^|\\G)(\\s*)(\\`{3,}|~{3,})\\s*(?i:(sigil))\\s*$",
+      "end": "(^|\\G)(\\s*)(\\`{3,}|~{3,})\\s*$",
+      "beginCaptures": {
+        "3": { "name": "punctuation.definition.markdown" },
+        "4": { "name": "fenced_code.block.language.markdown" }
+      },
+      "endCaptures": {
+        "3": { "name": "punctuation.definition.markdown" }
+      },
+      "patterns": [
+        {
+          "begin": "(^|\\G)(\\s*)",
+          "while": "(^|\\G)(?!\\s*(\\`{3,}|~{3,})\\s*$)",
+          "contentName": "meta.embedded.block.sigil",
+          "patterns": [{ "include": "source.sigil" }]
+        }
+      ]
+    }
+  }
+}
